@@ -39,7 +39,7 @@ import { ref, reactive, onMounted } from 'vue'
 
 
       <div class="p-2 d-flex flex-wrap justify-content-center align-item-center " id="welcome">
-        <h3>DO YOU WANT TO DONATE?</h3>
+        <h3>DO YOU WANT TO DONATE??</h3>
         <RouterLink to="/donation"><button type="button" class="btn btn-outline-dark text-black"
             style="background-color: #ffffff;"> <a class="" href="">
               DONATION
@@ -51,7 +51,8 @@ import { ref, reactive, onMounted } from 'vue'
       <div class="p-2 d-flex flex-wrap justify-content-center align-item-center " id="welcome">
         <h3>WELCOME</h3>
         <p>Somos una organizacion que reconoce que la exclusion y discriminacion desde la niñez afecta directamente la
-          capacidad de gozar los derechos humanos, lo que conlleva en dificultad y/o incapacidad para concluir estudios.
+          capacidad 
+          de gozar los derechos humanos, lo que conlleva en dificultad y/o incapacidad para concluir estudios.
           Entendemos que resulta necesario impulsar la reduccion de desigualdad hasta su eliminacion. Nuestra medida de
           accion es acompañar en alfabetizacion digital para una posterior insercion sociolaboral en el area IT de
           personas travestis, transexuales y transgeneros y para el acompañamiento a empresas que deseen brindas un
