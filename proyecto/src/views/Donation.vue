@@ -21,12 +21,12 @@
                                 <input type="text" id="city" name="city" placeholder="New York">
 
                                 <div class="gap-1 ">
-                                    <div >
-                                        <label>State</label>
+                                    <div class="p-2">
+                                        <label>State </label>
                                         <input type="text" name="state" placeholder="NY">
                                     </div>
                                     <div>
-                                        <label>Zip</label>
+                                        <label>Zip </label>
                                         <input type="text" name="zip" placeholder="10001">
                                     </div>
                                 </div>
@@ -34,7 +34,7 @@
 
                             <div class="d-flex flex-column justify-content-center align-item-center p-1 gap-1">
                                 <h3>Payment</h3>
-                                <label>Accepted Cards</label>
+                                <!-- <label>Accepted Cards</label> -->
                                 <!-- imagenes de tarjetas -->
                                 <label>Name on Card</label>
                                 <input type="text" placeholder="John More Doe">
@@ -59,7 +59,11 @@
                         <label>
                             <input type="checkbox" checked="checked"> Shipping address same as billing
                         </label>
-                        <input type="submit" value="Continue to checkout" class="btn btn-dark">
+                                      <button type="button" class="btn btn-outline-dark text-black" style="background-color: #ffffff;"> <a
+    class="link" href="#welcome">
+    <h1>Send </h1>
+  </a></button>
+                       
                     </form>
                 </div>
             </div>
@@ -79,6 +83,13 @@
     /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/imagen2.jpg); */
     background-size: cover;
     background-position: center;
+
+}
+.link {
+  text-decoration: none;
+  color: #f694c1;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  -webkit-transition: 1s ease;
 
 }
 </style>
