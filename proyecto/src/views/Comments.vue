@@ -5,11 +5,10 @@ import PostItem from '../components/PostItem.vue';
 import { posts } from '../store/PostStore.js'
 import NewPost from '../components/NewPost.vue';
 import { getPosts } from '../firebase/posts.js';
-import { getComments } from '../firebase/comments.js';
 
 onMounted(() => {
   getPosts()
-  getComments()
+
 })
 
 </script>

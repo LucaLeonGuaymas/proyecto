@@ -1,13 +1,17 @@
 import { app } from './index.js'
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from 'firebase/auth'
 import user from '../store/profile.js';
+import { addUser } from '../store/User.js';
+
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
+
+
 const loginWithGoogle = () => {
     signInWithPopup(auth, provider)
     .then((result)=>{
-        console.log('result', result)
-        user.value = result.user
+        user.value = result.user;
+        addUser(result.user)
     })
     .catch((error)=>{
         console.warn('error', error);

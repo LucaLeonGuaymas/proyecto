@@ -36,7 +36,7 @@ const addNewPost = () => {
     {{ updateData }}
     <form>
         <div class="header">
-            <img :src="user.photoURL" alt="foto de perfil">
+            <img :src="user?.photoURL" alt="foto de perfil">
             <textarea maxlength="280" required v-model="message" placeholder="¿Que estas pensando?"
                 @keyup.enter="addNewPost"></textarea>
         </div>
